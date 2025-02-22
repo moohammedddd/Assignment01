@@ -38,13 +38,23 @@ namespace Assignment01
             #endregion
 
             #region Q4
-            
+
+            //var result = ProductList.Select(p => p.ProductName);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            // LINQ – Transformation Operators
+            #region Q1
             var result = ProductList.Select(p => p.ProductName);
             foreach (var item in result)
             {
                 Console.WriteLine(item);
             }
             #endregion
+
         }
     }
 }

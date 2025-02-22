@@ -30,7 +30,16 @@ namespace Assignment01
             #endregion
 
             #region Q3
-            var result = ProductList.Where((p, i) => p.ProductName.Length < i);
+            //var result = ProductList.Where((p, i) => p.ProductName.Length < i);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region Q4
+            
+            var result = ProductList.Select(p => p.ProductName);
             foreach (var item in result)
             {
                 Console.WriteLine(item);

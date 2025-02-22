@@ -120,10 +120,17 @@ namespace Assignment01
             #endregion
 
             #region Q6
-            Console.WriteLine("select Orders ");
+            //Console.WriteLine("select Orders ");
+            //var result = from a in CustomerList
+            //             from o in a.Orders
+            //             where o.Total < 500.00m
+            //             select o;
+            #endregion
+
+            #region Q7
             var result = from a in CustomerList
                          from o in a.Orders
-                         where o.Total < 500.00m
+                         where o.OrderDate <= new DateTime(1998, 12, 31)
                          select o;
             #endregion
         }

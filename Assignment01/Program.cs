@@ -48,11 +48,21 @@ namespace Assignment01
 
             // LINQ – Transformation Operators
             #region Q1
-            var result = ProductList.Select(p => p.ProductName);
-            foreach (var item in result)
+            //var result = ProductList.Select(p => p.ProductName);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
+            #endregion
+
+            #region Q2
+            string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
+
+            var wordCases = words.Select(word => new
             {
-                Console.WriteLine(item);
-            }
+                Uppercase = word.ToUpper(),
+                Lowercase = word.ToLower()
+            });
             #endregion
 
         }

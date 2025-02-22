@@ -79,14 +79,31 @@ namespace Assignment01
             #endregion
 
             #region Q4
-            int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
-            var result = Arr.Select((p, i) => p == i);
-            foreach (var item in result)
-            {
-                Console.WriteLine(item);
-            }
+            //int[] Arr = { 5, 4, 1, 3, 9, 8, 6, 7, 2, 0 };
+            //var result = Arr.Select((p, i) => p == i);
+            //foreach (var item in result)
+            //{
+            //    Console.WriteLine(item);
+            //}
 
-            5
+            //
+            //int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
+            //int[] numbersB = { 1, 3, 5, 7, 8 };
+
+            //var pairs = from a in numbersA
+            //            from b in numbersB
+            //            where a < b
+            //            select (a, b);
+
+            //Console.WriteLine("Pairs where a < b:");
+            //foreach (var pair in pairs)
+            //{
+            //    Console.WriteLine($"{pair.a} is less than {pair.b}");
+            //}
+
+            #endregion
+
+            #region Q5
             int[] numbersA = { 0, 2, 4, 5, 6, 8, 9 };
             int[] numbersB = { 1, 3, 5, 7, 8 };
 
@@ -100,7 +117,6 @@ namespace Assignment01
             {
                 Console.WriteLine($"{pair.a} is less than {pair.b}");
             }
-
             #endregion
         }
     }

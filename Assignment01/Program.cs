@@ -13,13 +13,22 @@ namespace Assignment01
         static void Main(string[] args)
         {
             #region q1 . Find all products that are out of stock.
-            var first = ProductList.Where(p => p.UnitsInStock == 0);
+            //var first = ProductList.Where(p => p.UnitsInStock == 0);
+            //foreach (var item in first)
+            //{
+            //    Console.WriteLine(item);
+            //}
+
+            #endregion
+
+            #region Q2
+            var first = ProductList.Where(p => p.UnitsInStock >= 0 && p.UnitPrice > 3.00m);
             foreach (var item in first)
             {
                 Console.WriteLine(item);
             }
-
             #endregion
+
         }
     }
 }

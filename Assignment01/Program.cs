@@ -56,15 +56,27 @@ namespace Assignment01
             #endregion
 
             #region Q2
-            string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
+            //string[] words = { "aPPLE", "BlUeBeRrY", "cHeRry" };
 
-            var wordCases = words.Select(word => new
-            {
-                Uppercase = word.ToUpper(),
-                Lowercase = word.ToLower()
-            });
+            //var wordCases = words.Select(word => new
+            //{
+            //    Uppercase = word.ToUpper(),
+            //    Lowercase = word.ToLower()
+            //});
             #endregion
 
+            #region Q3
+            var result = ProductList.Select(p => new
+            {
+                Id = p.ProductID,
+                Name = p.ProductName,
+                Price = p.UnitPrice
+            });
+            foreach (var item in result)
+            {
+                Console.WriteLine(item);
+            }
+            #endregion
         }
     }
 }
